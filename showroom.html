@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom | SpeedX Bikes - Premium Motorcycle Collection</title>
+    <meta name="description"
+        content="Browse our complete collection of premium motorcycles, sport bikes, cruisers, and electric machines.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav">
+            <a href="index.html" class="logo">SPEED<span>X</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="showroom.html" class="active">Showroom</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="header-btns">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Test Ride</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px;">
+        <section class="container section-padding">
+            <div class="section-header">
+                <h1>OUR <span>INVENTORY</span></h1>
+                <p>Discover the perfect machine for your journey. 30+ Premium Motorcycles in Stock.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-motorcycle"></i> All Bikes (30+)
+                </button>
+                <button class="filter-btn" data-filter="sport">
+                    <i class="fas fa-bolt"></i> Sport
+                </button>
+                <button class="filter-btn" data-filter="cruiser">
+                    <i class="fas fa-road"></i> Cruiser
+                </button>
+                <button class="filter-btn" data-filter="naked">
+                    <i class="fas fa-fire"></i> Naked
+                </button>
+                <button class="filter-btn" data-filter="adventure">
+                    <i class="fas fa-mountain"></i> Adventure
+                </button>
+                <button class="filter-btn" data-filter="electric">
+                    <i class="fas fa-leaf"></i> Electric
+                </button>
+            </div>
+
+            <!-- Bike Grid -->
+            <div class="bike-grid" id="bike-inventory">
+
+                <!-- ========== SPORT BIKES ========== -->
+                <div class="bike-card" data-category="sport">
+                    <span class="bike-badge new">NEW 2026</span>
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=600"
+                        alt="Kawasaki Ninja ZX-10R">
+                    <div class="bike-card-content">
+                        <h3>Kawasaki Ninja ZX-10R</h3>
+                        <p class="specs">203HP | 998cc | Race Ready | ABS Pro</p>
+                        <div class="card-footer">
+                            <span class="price">$19,999</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="sport">
+                    <span class="bike-badge hot">HOT DEAL</span>
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600"
+                        alt="Ducati Panigale V4">
+                    <div class="bike-card-content">
+                        <h3>Ducati Panigale V4 SP2</h3>
+                        <p class="specs">215HP | 1103cc | Carbon Fiber | Ohlins</p>
+                        <div class="card-footer">
+                            <span class="price">$36,995</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="sport">
+                    <img src="https://images.unsplash.com/photo-1449490126678-01363690d575?auto=format&fit=crop&q=80&w=600"
+                        alt="BMW S1000RR">
+                    <div class="bike-card-content">
+                        <h3>BMW S1000RR M Package</h3>
+                        <p class="specs">210HP | 999cc | M Carbon | Dynamic Damping</p>
+                        <div class="card-footer">
+                            <span class="price">$24,795</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="sport">
+                    <span class="bike-badge new">NEW</span>
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=600"
+                        alt="Yamaha YZF-R1">
+                    <div class="bike-card-content">
+                        <h3>Yamaha YZF-R1M</h3>
+                        <p class="specs">200HP | 998cc | MotoGP Tech | Quick Shifter</p>
+                        <div class="card-footer">
+                            <span class="price">$26,899</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="sport">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600"
+                        alt="Honda CBR1000RR">
+                    <div class="bike-card-content">
+                        <h3>Honda CBR1000RR-R Fireblade</h3>
+                        <p class="specs">217HP | 999cc | Titanium Exhaust | TC+</p>
+                        <div class="card-footer">
+                            <span class="price">$28,500</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="sport">
+                    <span class="bike-badge hot">BESTSELLER</span>
+                    <img src="https://images.unsplash.com/photo-1449490126678-01363690d575?auto=format&fit=crop&q=80&w=600"
+                        alt="Aprilia RSV4">
+                    <div class="bike-card-content">
+                        <h3>Aprilia RSV4 Factory</h3>
+                        <p class="specs">217HP | 1099cc | V4 Engine | Semi-Active</p>
+                        <div class="card-footer">
+                            <span class="price">$24,999</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="sport">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=600"
+                        alt="Suzuki GSX-R1000">
+                    <div class="bike-card-content">
+                        <h3>Suzuki GSX-R1000R</h3>
+                        <p class="specs">199HP | 999cc | MotoGP DNA | Cornering ABS</p>
+                        <div class="card-footer">
+                            <span class="price">$17,749</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="sport">
+                    <span class="bike-badge new">2026</span>
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600"
+                        alt="MV Agusta F3">
+                    <div class="bike-card-content">
+                        <h3>MV Agusta F3 800</h3>
+                        <p class="specs">148HP | 798cc | Italian Art | 3-Cylinder</p>
+                        <div class="card-footer">
+                            <span class="price">$19,998</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== CRUISER BIKES ========== -->
+                <div class="bike-card" data-category="cruiser">
+                    <span class="bike-badge new">NEW 2026</span>
+                    <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&q=80&w=600"
+                        alt="Harley-Davidson Fat Boy">
+                    <div class="bike-card-content">
+                        <h3>Harley-Davidson Fat Boy 114</h3>
+                        <p class="specs">1868cc | V-Twin | Milwaukee-Eight | Chrome</p>
+                        <div class="card-footer">
+                            <span class="price">$21,999</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="cruiser">
+                    <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?auto=format&fit=crop&q=80&w=600"
+                        alt="Indian Chief">
+                    <div class="bike-card-content">
+                        <h3>Indian Chief Dark Horse</h3>
+                        <p class="specs">1890cc | Thunderstroke | LED | ABS</p>
+                        <div class="card-footer">
+                            <span class="price">$18,999</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="cruiser">
+                    <span class="bike-badge hot">POPULAR</span>
+                    <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&q=80&w=600"
+                        alt="Triumph Bonneville">
+                    <div class="bike-card-content">
+                        <h3>Triumph Bonneville Bobber</h3>
+                        <p class="specs">1200cc | Parallel Twin | Retro Style | TFT</p>
+                        <div class="card-footer">
+                            <span class="price">$14,300</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="cruiser">
+                    <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?auto=format&fit=crop&q=80&w=600"
+                        alt="Kawasaki Vulcan">
+                    <div class="bike-card-content">
+                        <h3>Kawasaki Vulcan S 650</h3>
+                        <p class="specs">650cc | Parallel Twin | Ergo-Fit | Budget</p>
+                        <div class="card-footer">
+                            <span class="price">$7,599</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="cruiser">
+                    <span class="bike-badge new">NEW</span>
+                    <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&q=80&w=600"
+                        alt="Honda Gold Wing">
+                    <div class="bike-card-content">
+                        <h3>Honda Gold Wing Tour DCT</h3>
+                        <p class="specs">1833cc | Flat-6 | CarPlay | Airbag</p>
+                        <div class="card-footer">
+                            <span class="price">$31,500</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="cruiser">
+                    <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?auto=format&fit=crop&q=80&w=600"
+                        alt="Harley Road Glide">
+                    <div class="bike-card-content">
+                        <h3>Harley-Davidson Road Glide</h3>
+                        <p class="specs">1868cc | Shark Nose | Boom Box | Touring</p>
+                        <div class="card-footer">
+                            <span class="price">$25,999</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== NAKED BIKES ========== -->
+                <div class="bike-card" data-category="naked">
+                    <span class="bike-badge hot">HOT</span>
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=600"
+                        alt="Ducati Streetfighter V4">
+                    <div class="bike-card-content">
+                        <h3>Ducati Streetfighter V4 S</h3>
+                        <p class="specs">208HP | 1103cc | Winglets | Ohlins</p>
+                        <div class="card-footer">
+                            <span class="price">$28,995</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="naked">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600"
+                        alt="KTM 1290 Super Duke">
+                    <div class="bike-card-content">
+                        <h3>KTM 1290 Super Duke R</h3>
+                        <p class="specs">180HP | 1301cc | The Beast | WP Suspension</p>
+                        <div class="card-footer">
+                            <span class="price">$18,699</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="naked">
+                    <span class="bike-badge new">NEW</span>
+                    <img src="https://images.unsplash.com/photo-1449490126678-01363690d575?auto=format&fit=crop&q=80&w=600"
+                        alt="Kawasaki Z H2">
+                    <div class="bike-card-content">
+                        <h3>Kawasaki Z H2 SE</h3>
+                        <p class="specs">200HP | 998cc | Supercharged | Electronic Susp</p>
+                        <div class="card-footer">
+                            <span class="price">$21,500</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="naked">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=600"
+                        alt="Yamaha MT-10">
+                    <div class="bike-card-content">
+                        <h3>Yamaha MT-10 SP</h3>
+                        <p class="specs">160HP | 998cc | Dark Side | Ohlins</p>
+                        <div class="card-footer">
+                            <span class="price">$17,299</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="naked">
+                    <span class="bike-badge hot">POPULAR</span>
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600"
+                        alt="BMW S1000R">
+                    <div class="bike-card-content">
+                        <h3>BMW S1000R M Sport</h3>
+                        <p class="specs">165HP | 999cc | M Package | DDC</p>
+                        <div class="card-footer">
+                            <span class="price">$17,995</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="naked">
+                    <img src="https://images.unsplash.com/photo-1449490126678-01363690d575?auto=format&fit=crop&q=80&w=600"
+                        alt="Triumph Speed Triple">
+                    <div class="bike-card-content">
+                        <h3>Triumph Speed Triple 1200 RS</h3>
+                        <p class="specs">178HP | 1160cc | Triple Engine | Brembo</p>
+                        <div class="card-footer">
+                            <span class="price">$18,500</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== ADVENTURE BIKES ========== -->
+                <div class="bike-card" data-category="adventure">
+                    <span class="bike-badge new">NEW 2026</span>
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=600"
+                        alt="BMW R1300GS">
+                    <div class="bike-card-content">
+                        <h3>BMW R 1300 GS Adventure</h3>
+                        <p class="specs">145HP | 1300cc | Boxer | Off-Road Ready</p>
+                        <div class="card-footer">
+                            <span class="price">$22,995</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="adventure">
+                    <span class="bike-badge hot">BESTSELLER</span>
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600"
+                        alt="KTM 1290 Adventure">
+                    <div class="bike-card-content">
+                        <h3>KTM 1290 Super Adventure S</h3>
+                        <p class="specs">160HP | 1301cc | Semi-Active | Radar</p>
+                        <div class="card-footer">
+                            <span class="price">$19,999</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="adventure">
+                    <img src="https://images.unsplash.com/photo-1449490126678-01363690d575?auto=format&fit=crop&q=80&w=600"
+                        alt="Ducati Multistrada">
+                    <div class="bike-card-content">
+                        <h3>Ducati Multistrada V4 Rally</h3>
+                        <p class="specs">170HP | 1158cc | V4 | 30L Tank</p>
+                        <div class="card-footer">
+                            <span class="price">$29,995</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="adventure">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=600"
+                        alt="Honda Africa Twin">
+                    <div class="bike-card-content">
+                        <h3>Honda Africa Twin Adventure</h3>
+                        <p class="specs">101HP | 1084cc | DCT | Rally Heritage</p>
+                        <div class="card-footer">
+                            <span class="price">$16,999</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="adventure">
+                    <span class="bike-badge new">NEW</span>
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600"
+                        alt="Triumph Tiger">
+                    <div class="bike-card-content">
+                        <h3>Triumph Tiger 1200 Rally Pro</h3>
+                        <p class="specs">148HP | 1160cc | Triple | Off-Road Pack</p>
+                        <div class="card-footer">
+                            <span class="price">$21,500</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="adventure">
+                    <img src="https://images.unsplash.com/photo-1449490126678-01363690d575?auto=format&fit=crop&q=80&w=600"
+                        alt="Yamaha Tenere">
+                    <div class="bike-card-content">
+                        <h3>Yamaha Ténéré 700 World Raid</h3>
+                        <p class="specs">73HP | 689cc | Rally Style | 23L Tank</p>
+                        <div class="card-footer">
+                            <span class="price">$12,999</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== ELECTRIC BIKES ========== -->
+                <div class="bike-card" data-category="electric">
+                    <span class="bike-badge eco">ELECTRIC</span>
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=600"
+                        alt="Harley LiveWire">
+                    <div class="bike-card-content">
+                        <h3>Harley-Davidson LiveWire ONE</h3>
+                        <p class="specs">105HP | 160km Range | 0-100 in 3.0s</p>
+                        <div class="card-footer">
+                            <span class="price">$21,999</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="electric">
+                    <span class="bike-badge hot">TOP RATED</span>
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600"
+                        alt="Zero SR/S">
+                    <div class="bike-card-content">
+                        <h3>Zero SR/S Premium</h3>
+                        <p class="specs">110HP | 320km Range | CCS Charging</p>
+                        <div class="card-footer">
+                            <span class="price">$22,995</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="electric">
+                    <span class="bike-badge new">NEW 2026</span>
+                    <img src="https://images.unsplash.com/photo-1449490126678-01363690d575?auto=format&fit=crop&q=80&w=600"
+                        alt="Energica Ego+">
+                    <div class="bike-card-content">
+                        <h3>Energica Ego+ RS</h3>
+                        <p class="specs">171HP | 420km Range | MotoE Tech</p>
+                        <div class="card-footer">
+                            <span class="price">$28,990</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="electric">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=600"
+                        alt="Zero SR/F">
+                    <div class="bike-card-content">
+                        <h3>Zero SR/F</h3>
+                        <p class="specs">110HP | 260km Range | Rapid Charge</p>
+                        <div class="card-footer">
+                            <span class="price">$19,995</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="electric">
+                    <span class="bike-badge new">COMING SOON</span>
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600"
+                        alt="Damon Hypersport">
+                    <div class="bike-card-content">
+                        <h3>Damon Hypersport Premier</h3>
+                        <p class="specs">200HP | 320km | CoPilot AI | Shift</p>
+                        <div class="card-footer">
+                            <span class="price">$40,000</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bike-card" data-category="electric">
+                    <span class="bike-badge hot">FASTEST</span>
+                    <img src="https://images.unsplash.com/photo-1449490126678-01363690d575?auto=format&fit=crop&q=80&w=600"
+                        alt="Lightning LS-218">
+                    <div class="bike-card-content">
+                        <h3>Lightning LS-218</h3>
+                        <p class="specs">200HP | 350km Range | 350km/h Top Speed</p>
+                        <div class="card-footer">
+                            <span class="price">$38,888</span>
+                            <a href="bike-details.html" class="btn btn-outline btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section section-padding">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>CAN'T FIND YOUR <span>DREAM BIKE</span>?</h2>
+                    <p>We have access to hundreds more models through our dealer network. Contact us today!</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-phone"></i>
+                            Contact Us
+                        </a>
+                        <a href="contact.html" class="btn btn-outline">
+                            <i class="fas fa-calendar-check"></i>
+                            Book Showroom Visit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">SPEED<span>X</span></a>
+                    <p>Your gateway to high-performance biking. 30+ Premium Motorcycles.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="showroom.html">Browse Inventory</a></li>
+                        <li><a href="services.html">Maintenance</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="blog.html">Latest News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Sport Bikes</a></li>
+                        <li><a href="#">Cruisers</a></li>
+                        <li><a href="#">Naked Bikes</a></li>
+                        <li><a href="#">Electric</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-location-dot"></i> 123 Racing Lane</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) SPEED-X</li>
+                        <li><i class="fas fa-envelope"></i> info@speedxbikes.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SpeedX Bikes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

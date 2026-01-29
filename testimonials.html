@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | SpeedX Bikes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .testimonial-card {
+            padding: 30px;
+            position: relative;
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 2rem;
+            color: var(--accent-color);
+            opacity: 0.2;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .user-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .stars {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <a href="index.html" class="logo">SPEED<span>X</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="showroom.html">Showroom</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html" class="active">Reviews</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px;">
+        <section class="container section-padding">
+            <h1 style="text-align: center; margin-bottom: 50px;">CUSTOMER <span>EXPERIENCES</span></h1>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="testimonial-card glass">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="color: var(--text-secondary); font-style: italic;">"The buying experience at SpeedX was
+                        seamless. They really know their bikes, and the HyperSport ZX I bought is a absolute beast!"</p>
+                    <div class="user-info">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=100"
+                            alt="User">
+                        <div>
+                            <h4 style="font-size: 1rem;">John Doe</h4>
+                            <p style="font-size: 0.8rem; color: var(--accent-color);">ZX Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="color: var(--text-secondary); font-style: italic;">"Best customer service in town. They
+                        helped me customize my Shadow Rover exactly how I wanted it. Highly recommended!"</p>
+                    <div class="user-info">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100"
+                            alt="User">
+                        <div>
+                            <h4 style="font-size: 1rem;">Sarah Jenkins</h4>
+                            <p style="font-size: 0.8rem; color: var(--accent-color);">Cruiser Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <p style="color: var(--text-secondary); font-style: italic;">"The Volt X1 is changing the game for
+                        my daily commute. No gas, all power. The SpeedX team made the transition to electric so easy."
+                    </p>
+                    <div class="user-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100"
+                            alt="User">
+                        <div>
+                            <h4 style="font-size: 1rem;">Michael Chen</h4>
+                            <p style="font-size: 0.8rem; color: var(--accent-color);">Electric Rider</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: #f1f3f5; padding: 50px 0;">
+        <div class="container" style="text-align: center;">
+            <a href="index.html" class="logo">SPEED<span>X</span></a>
+            <p style="color: var(--text-secondary); margin-top: 20px;">&copy; 2026 SpeedX Bikes.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

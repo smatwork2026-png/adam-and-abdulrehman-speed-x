@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | SpeedX Bikes - Expert Motorcycle Care</title>
+    <meta name="description"
+        content="Premium motorcycle maintenance, repairs, and customization services by certified technicians.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .services-hero {
+            padding: 150px 0 80px;
+            background: linear-gradient(135deg, rgba(255, 0, 51, 0.1) 0%, transparent 50%);
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 40px;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-racing);
+            transform: scaleX(0);
+            transition: var(--transition-smooth);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-red);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-racing);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .service-price {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+
+        .why-us {
+            background: var(--bg-surface);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .why-item {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .why-number {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--gradient-racing);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .why-item h4 {
+            margin-bottom: 10px;
+        }
+
+        .why-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 1024px) {
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav">
+            <a href="index.html" class="logo">SPEED<span>X</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="showroom.html">Showroom</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="header-btns">
+                <a href="contact.html" class="btn btn-primary btn-sm">Book Service</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Services Hero -->
+        <section class="services-hero">
+            <div class="container">
+                <h1>EXPERT <span>SERVICES</span></h1>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 20px auto 0;">
+                    Your bike deserves the best care. Our certified technicians treat every machine like their own.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-oil-can"></i></div>
+                        <h3>Regular Maintenance</h3>
+                        <p>Complete oil change, filter replacement, chain adjustment, brake inspection, and multi-point
+                            safety check.</p>
+                        <span class="service-price">Starting $149</span>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-wrench"></i></div>
+                        <h3>Engine Tuning</h3>
+                        <p>Professional ECU mapping, carburetor tuning, fuel injection optimization, and dyno testing
+                            for maximum performance.</p>
+                        <span class="service-price">Starting $299</span>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-gear"></i></div>
+                        <h3>Transmission Service</h3>
+                        <p>Clutch replacement, gear adjustment, chain & sprocket replacement, and complete drivetrain
+                            inspection.</p>
+                        <span class="service-price">Starting $199</span>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-car-battery"></i></div>
+                        <h3>Electrical Diagnostics</h3>
+                        <p>Battery testing, wiring inspection, lighting upgrades, and complete electrical system
+                            diagnostics.</p>
+                        <span class="service-price">Starting $89</span>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-truck-pickup"></i></div>
+                        <h3>Suspension Setup</h3>
+                        <p>Fork oil change, shock absorber service, suspension geometry setup, and custom tuning for
+                            your riding style.</p>
+                        <span class="service-price">Starting $249</span>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Custom Paint & Graphics</h3>
+                        <p>Professional paint jobs, custom graphics, tank refinishing, and complete bodywork
+                            restoration.</p>
+                        <span class="service-price">Starting $499</span>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Safety Inspection</h3>
+                        <p>Complete 50-point safety inspection covering brakes, tires, lights, steering, and all
+                            critical systems.</p>
+                        <span class="service-price">Starting $59</span>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Performance Upgrades</h3>
+                        <p>Exhaust systems, air filters, quick shifters, power commanders, and complete performance
+                            packages.</p>
+                        <span class="service-price">Starting $399</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-us section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>WHY CHOOSE <span>OUR SERVICE</span>?</h2>
+                    <p>Numbers that speak for themselves.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-number">15+</div>
+                        <h4>Years Experience</h4>
+                        <p>Serving riders since 2011</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-number">5000+</div>
+                        <h4>Bikes Serviced</h4>
+                        <p>Every make and model</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-number">98%</div>
+                        <h4>Customer Satisfaction</h4>
+                        <p>5-star reviews</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-number">24h</div>
+                        <h4>Quick Turnaround</h4>
+                        <p>Most services same day</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section section-padding">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>READY TO BOOK <span>YOUR SERVICE</span>?</h2>
+                    <p>Schedule an appointment online or call us directly. We offer pickup and delivery for your
+                        convenience.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-calendar-check"></i>
+                            Book Appointment
+                        </a>
+                        <a href="tel:+15555733339" class="btn btn-outline">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">SPEED<span>X</span></a>
+                    <p>Your gateway to high-performance biking.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="showroom.html">Browse Inventory</a></li>
+                        <li><a href="services.html">Maintenance</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (555) SPEED-X</li>
+                        <li><i class="fas fa-envelope"></i> info@speedxbikes.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SpeedX Bikes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
